@@ -11,3 +11,4 @@ omit =
     */migrations.py
     */tests/*
     */urls.py/*
+    *venv/lib/python3.8/*
