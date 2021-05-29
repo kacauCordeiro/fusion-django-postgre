@@ -1,4 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea/*
 *.txt
 .idea/*
 !requirements.txt
@@ -30,6 +31,7 @@ htmlcov/
 .tox/
 .coverage
 .coverage.*
+htmlcov/*
 .cache
 nosetests.xml
 coverage.xml

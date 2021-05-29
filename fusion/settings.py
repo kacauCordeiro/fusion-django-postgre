@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'django_adminlte',
+    'django_adminlte_theme',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,19 +77,19 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fusion',
-        'USER': 'root',
-        'PASSWORD': 'sorvete123',
-        'HOST': 'localhost',
-        'PORT': 5432
-    }
-}
 
-"""
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'fusion',
+#         'USER': 'root',
+#         'PASSWORD': 'sorvete123',
+#         'HOST': 'localhost',
+#         'PORT': 5432
+#     }
+# }
+
+
 DATABASES = {
     'default': dj_database_url.config()
 }

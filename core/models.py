@@ -47,6 +47,9 @@ class Cargo(Base):
         verbose_name = 'Cargo'
         verbose_name_plural = 'Cargos'
 
+    def __str__(self):
+        return self.cargo
+
 
 class Funcionario(Base):
     nome = models.CharField('Nome', max_length=100)
